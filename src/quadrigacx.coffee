@@ -12,7 +12,7 @@ module.exports = class Quadrigacx
 		@version = 'v2'
 		@client_id = client_id
 		@key = key
-		@secret_hash = crypto.createHash('md5').update(secret).digest('hex')
+		@secret_hash = secret
 		@nonce = Math.ceil((new Date()).getTime() / 1000)
 
 	_nonce: () ->
